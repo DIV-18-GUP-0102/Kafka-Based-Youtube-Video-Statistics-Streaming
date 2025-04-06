@@ -1,0 +1,48 @@
+# for i in range(0, pages-1):
+    #     try:
+    #         response = requests.get("https://www.googleapis.com/youtube/v3/playlistItems",
+    #                             params={
+    #                                 "key":google_api_key,
+    #                                 "pageToken" : nextPageToken,
+    #                                 "part" : ["contentDetails", "id", "snippet", "status"],
+    #                                 "playlistId":youtube_playlist_id,
+
+    #                             })
+    #         data = response.json()
+    #         get_response_dict.extend(data["items"])
+    #         nextPageToken = data.get("nextPageToken")
+    #         if not nextPageToken :
+    #             logging.error(f"Error occured when fetching the 'nextPageToken' in the page no: {i+1}")
+    #             print(f"Pagination Crawl Warning: Error occured when fetching the 'nextPageToken' in the page no: {i+1} .")
+    #             break
+
+    #     except Exception as e:
+    #         logging.error(f"An unexpected error occurred on iteration {i}: {e}")
+    
+    
+
+    while(nextPageToken):
+        try:
+            response = requests.get("https://www.googleapis.com/youtube/v3/playlistItems",
+                                params={
+                                    "key":google_api_key,
+                                    "pageToken" : nextPageToken,
+                                    "part" : ["contentDetails", "id", "snippet", "status"],
+                                    "playlistId":youtube_playlist_id,
+
+                                })
+            data = response.json()
+            get_response_dict.extend(data["items"])
+            nextPageToken = data.get("nextPageToken")
+            logging.warning(f"Error occured when fetching the 'nextPageToken' in the page no: {i+1}")
+
+        except Exception as e:
+            logging.error(f"An unexpected error occurred during iteration: {e}")
+
+            # if not nextPageToken :
+            #     logging.error(f"Error occured when fetching the 'nextPageToken' in the page no: {i+1}")
+            #     print(f"Error occured when fetching the 'nextPageToken' in the page no: {i+1} .")
+            #     break
+
+    # Saving the retieved playlist Items from dictionary to json file
+    save_to_json(get_response_dict, "playlistItems.json")

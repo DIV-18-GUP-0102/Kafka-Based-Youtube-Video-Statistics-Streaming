@@ -1,0 +1,203 @@
+2025-04-06 00:59:28,976 - INFO - X=======================================START=========================================X
+2025-04-06 00:59:29,022 - DEBUG - connect_tcp.started host='psrc-mkzxq1.asia-south1.gcp.confluent.cloud' port=443 local_address=None timeout=None socket_options=None
+2025-04-06 00:59:29,056 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x746cb3a40590>
+2025-04-06 00:59:29,057 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x746cb3aa96d0> server_hostname='psrc-mkzxq1.asia-south1.gcp.confluent.cloud' timeout=None
+2025-04-06 00:59:29,101 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x746cb48b3ce0>
+2025-04-06 00:59:29,101 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-06 00:59:29,102 - DEBUG - send_request_headers.complete
+2025-04-06 00:59:29,102 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-06 00:59:29,102 - DEBUG - send_request_body.complete
+2025-04-06 00:59:29,102 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-06 00:59:29,251 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 05 Apr 2025 19:29:29 GMT'), (b'X-Request-ID', b'd3c7af29-7abe-45e9-8943-5bfab4e8911c'), (b'Content-Type', b'application/vnd.schemaregistry.v1+json'), (b'Vary', b'Accept-Encoding, User-Agent'), (b'Content-Encoding', b'gzip'), (b'Content-Length', b'253')])
+2025-04-06 00:59:29,252 - INFO - HTTP Request: GET https://psrc-mkzxq1.asia-south1.gcp.confluent.cloud/subjects/youtube_videos-value/versions/latest "HTTP/1.1 200 OK"
+2025-04-06 00:59:29,252 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-06 00:59:29,253 - DEBUG - receive_response_body.complete
+2025-04-06 00:59:29,253 - DEBUG - response_closed.started
+2025-04-06 00:59:29,253 - DEBUG - response_closed.complete
+2025-04-06 00:59:29,253 - DEBUG - close.started
+2025-04-06 00:59:29,253 - DEBUG - close.complete
+2025-04-06 00:59:29,285 - DEBUG - Starting new HTTPS connection (1): www.googleapis.com:443
+2025-04-06 00:59:29,645 - DEBUG - https://www.googleapis.com:443 "GET /youtube/v3/playlistItems?key=AIzaSyDxyxRoPRjRgMWp7ubSy0FUGAF92PsCg7U&part=contentDetails&part=id&playlistId=PLr3-bEi1N4khKZm2u6Q8pOLO-WNZrKDHn HTTP/1.1" 200 None
+2025-04-06 00:59:29,646 - DEBUG - GOT PAGE:
+{
+  "kind": "youtube#playlistItemListResponse",
+  "etag": "1KX-ly0oYru6r8a7dDp-j6Pte08",
+  "nextPageToken": "EAAaHlBUOkNBVWlFRGs0TkVNMU9EUkNNRGcyUVVFMlJESQ",
+  "items": [
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "vxvYGfoSE8eTihZy2To1A0he_XA",
+      "id": "UExyMy1iRWkxTjRraEtabTJ1NlE4cE9MTy1XTlpyS0RIbi45RTgxNDRBMzUwRjQ0MDhC",
+      "contentDetails": {
+        "videoId": "Ime5-Yrn0o4",
+        "videoPublishedAt": "2023-11-08T17:57:09Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "ZQ2zbEB330tpTZ79CUVXcX1sXWA",
+      "id": "UExyMy1iRWkxTjRraEtabTJ1NlE4cE9MTy1XTlpyS0RIbi41QTY1Q0UxMTVCODczNThE",
+      "contentDetails": {
+        "videoId": "3AZFMT0LNAU",
+        "videoPublishedAt": "2022-10-19T10:57:14Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "WIVb1f-mO1DBj1Dy6a5qovwZaBE",
+      "id": "UExyMy1iRWkxTjRraEtabTJ1NlE4cE9MTy1XTlpyS0RIbi41Mzk2QTAxMTkzNDk4MDhF",
+      "contentDetails": {
+        "videoId": "EZJ6PuD5Sr8",
+        "videoPublishedAt": "2022-10-11T10:18:48Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "_G9FVmvuxaLED6exShLHWyVwvyA",
+      "id": "UExyMy1iRWkxTjRraEtabTJ1NlE4cE9MTy1XTlpyS0RIbi5EQUE1NTFDRjcwMDg0NEMz",
+      "contentDetails": {
+        "videoId": "hHewmlUmADg",
+        "videoPublishedAt": "2022-09-01T14:00:38Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "HluaIIMNwGjznAmP5S-Fp6Gopng",
+      "id": "UExyMy1iRWkxTjRraEtabTJ1NlE4cE9MTy1XTlpyS0RIbi4yMUQyQTQzMjRDNzMyQTMy",
+      "contentDetails": {
+        "videoId": "J_W3bs4CIRI",
+        "videoPublishedAt": "2022-05-09T13:57:48Z"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 18,
+    "resultsPerPage": 5
+  }
+}
+
+2025-04-06 00:59:29,648 - DEBUG - Starting new HTTPS connection (1): www.googleapis.com:443
+2025-04-06 00:59:29,847 - DEBUG - https://www.googleapis.com:443 "GET /youtube/v3/videos?key=AIzaSyDxyxRoPRjRgMWp7ubSy0FUGAF92PsCg7U&part=id&part=snippet&part=statistics&id=Ime5-Yrn0o4 HTTP/1.1" 200 None
+2025-04-06 00:59:29,848 - DEBUG - GOT VIDEO PAGE ON VIDEO ID-(Ime5-Yrn0o4) :
+{
+  "kind": "youtube#videoListResponse",
+  "etag": "GM8OdXmXyzVb97HU08lsSXfHYK4",
+  "items": [
+    {
+      "kind": "youtube#video",
+      "etag": "373Fghpc08jAaZh6KBt_DdBVVys",
+      "id": "Ime5-Yrn0o4",
+      "snippet": {
+        "publishedAt": "2023-11-08T17:57:09Z",
+        "channelId": "UCmZz-Gj3caLLzEWBtbYUXaA",
+        "title": "Side Effects Are Why We Can’t Have Nice Things",
+        "description": "What will save us from software complexity? Microservices architectures? Immutable data? Functional languages? Event streaming? These may seem like disparate solutions, but they’re all connected, They’re all striving to solve the same fundamental problem: Side effects.\n   \nSide effects are one of the most insidious causes of software complexity, and yet we’re barely aware of them. And the attempts to tackle side effects have produced some of the most interesting developments in software development in the past decade, yet as an industry we’re barely aware of the fundamental pattern tying everything together. Let’s fix that.\n   \nJoin me to understand what side effects are and why they matter. You’ll learn to spot them in your own code. You’ll see how they sneak into our tests, our APIs and our systems’ designs and make everything harder. Then we’ll look at our industry’s many solutions to side effects. You’ll see why immutable data structures are appearing in every language; why we invented OO and why it might get replaced with FP. And we’ll see what it all means for the larger designs of microservices, data processing and event systems.\n   \nSide effects are a hologram - put the right light on them and you can see a whole picture of modern computing emerging. Take a look and you’ll see the nice things the future could hold.\n\nABOUT CONFLUENT\nConfluent is pioneering a fundamentally new category of data infrastructure focused on data in motion. Confluent’s cloud-native offering is the foundational platform for data in motion – designed to be the intelligent connective tissue enabling real-time data, from multiple sources, to constantly stream across the organization. With Confluent, organizations can meet the new business imperative of delivering rich, digital front-end customer experiences and transitioning to sophisticated, real-time, software-driven backend operations. To learn more, please visit www.confluent.io.\n\n#confluent #apachekafka #kafka",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Ime5-Yrn0o4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Ime5-Yrn0o4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Ime5-Yrn0o4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Ime5-Yrn0o4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Ime5-Yrn0o4/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Confluent",
+        "tags": [
+          "confluent",
+          "apache kafka",
+          "streams",
+          "logs",
+          "hadoop",
+          "free",
+          "open source",
+          "streaming",
+          "platform",
+          "applications",
+          "apps",
+          "real-time",
+          "processing",
+          "data",
+          "Multi-Datacenter",
+          "monitoring",
+          "developers",
+          "operations",
+          "ops",
+          "java",
+          ".net",
+          "messaging queue",
+          "distributed",
+          "commit",
+          "fault-tolerant",
+          "publish",
+          "subscribe",
+          "pipelines",
+          "Flink",
+          "data streaming",
+          "data in motion"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Side Effects Are Why We Can’t Have Nice Things",
+          "description": "What will save us from software complexity? Microservices architectures? Immutable data? Functional languages? Event streaming? These may seem like disparate solutions, but they’re all connected, They’re all striving to solve the same fundamental problem: Side effects.\n   \nSide effects are one of the most insidious causes of software complexity, and yet we’re barely aware of them. And the attempts to tackle side effects have produced some of the most interesting developments in software development in the past decade, yet as an industry we’re barely aware of the fundamental pattern tying everything together. Let’s fix that.\n   \nJoin me to understand what side effects are and why they matter. You’ll learn to spot them in your own code. You’ll see how they sneak into our tests, our APIs and our systems’ designs and make everything harder. Then we’ll look at our industry’s many solutions to side effects. You’ll see why immutable data structures are appearing in every language; why we invented OO and why it might get replaced with FP. And we’ll see what it all means for the larger designs of microservices, data processing and event systems.\n   \nSide effects are a hologram - put the right light on them and you can see a whole picture of modern computing emerging. Take a look and you’ll see the nice things the future could hold.\n\nABOUT CONFLUENT\nConfluent is pioneering a fundamentally new category of data infrastructure focused on data in motion. Confluent’s cloud-native offering is the foundational platform for data in motion – designed to be the intelligent connective tissue enabling real-time data, from multiple sources, to constantly stream across the organization. With Confluent, organizations can meet the new business imperative of delivering rich, digital front-end customer experiences and transitioning to sophisticated, real-time, software-driven backend operations. To learn more, please visit www.confluent.io.\n\n#confluent #apachekafka #kafka"
+        },
+        "defaultAudioLanguage": "en-US"
+      },
+      "statistics": {
+        "viewCount": "305",
+        "likeCount": "17",
+        "favoriteCount": "0",
+        "commentCount": "1"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 1
+  }
+}
+
+2025-04-06 00:59:29,849 - DEBUG - Video RECEIVED 1:
+{
+    "video_id": "Ime5-Yrn0o4",
+    "title": "Side Effects Are Why We Can\u2019t Have Nice Things",
+    "view_count": "305",
+    "like_count": "17",
+    "comment_count": "1"
+}
+2025-04-06 00:59:29,850 - DEBUG - connect_tcp.started host='psrc-mkzxq1.asia-south1.gcp.confluent.cloud' port=443 local_address=None timeout=None socket_options=None
+2025-04-06 00:59:29,895 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x746cb382b9e0>
+2025-04-06 00:59:29,896 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x746cb3aa96d0> server_hostname='psrc-mkzxq1.asia-south1.gcp.confluent.cloud' timeout=None
+2025-04-06 00:59:29,939 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x746cb382b8f0>
+2025-04-06 00:59:29,939 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-06 00:59:29,940 - DEBUG - send_request_headers.complete
+2025-04-06 00:59:29,940 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-06 00:59:29,940 - DEBUG - send_request_body.complete
+2025-04-06 00:59:29,940 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-06 00:59:30,003 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 05 Apr 2025 19:29:30 GMT'), (b'X-Request-ID', b'9013b472-723c-4a6a-83da-ca9574bf3536'), (b'Content-Type', b'application/vnd.schemaregistry.v1+json'), (b'Vary', b'Accept-Encoding, User-Agent'), (b'Content-Length', b'13')])
+2025-04-06 00:59:30,004 - INFO - HTTP Request: POST https://psrc-mkzxq1.asia-south1.gcp.confluent.cloud/subjects/youtube_videos-value/versions?normalize=False "HTTP/1.1 200 OK"
+2025-04-06 00:59:30,004 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-06 00:59:30,005 - DEBUG - receive_response_body.complete
+2025-04-06 00:59:30,005 - DEBUG - response_closed.started
+2025-04-06 00:59:30,005 - DEBUG - response_closed.complete
+2025-04-06 00:59:30,005 - DEBUG - close.started
+2025-04-06 00:59:30,005 - DEBUG - close.complete
